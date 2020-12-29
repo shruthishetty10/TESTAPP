@@ -1,0 +1,26 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "simple hello to test own librabry",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShruthiShetty6/TESTAPP.git"
+  },
+  "keywords": [
+    "simple",
+    "hello"
+  ],
+  "author": "Shruthi Shetty <shruthi.shetty@robosoftin.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShruthiShetty6/TESTAPP/issues"
+  },
+  "homepage": "https://github.com/ShruthiShetty6/TESTAPP#readme",
+  "dependencies": {
+    "unique-random-array": "2.0.0"
+  }
+}
