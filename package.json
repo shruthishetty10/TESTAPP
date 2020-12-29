@@ -1,6 +1,6 @@
 {
-  "name": "testapp",
-  "version": "1.0.0",
+  "name": "testlibshruthi",
+  "version": "1.1.0",
   "description": "simple hello to test own librabry",
   "main": "src/index.js",
   "scripts": {
