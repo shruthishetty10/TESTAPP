@@ -3,5 +3,5 @@ var Names = require("./name.json");
 
 module.exports = {
   all: Names,
-  random: uniqueRandomArray(Names),
+  random: uniqueRandomArray(Names)
 };

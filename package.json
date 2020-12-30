@@ -4,9 +4,11 @@
   "description": "simple hello to test own librabry",
   "main": "src/index.js",
   "scripts": {
-    "commit":"git-cz",
+    "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prebuild": "rimraf dist",
+    "build": "babel --out-dir dist --ignore *.test.js src"
   },
   "repository": {
     "type": "git",
@@ -26,13 +28,17 @@
     "unique-random-array": "2.0.0"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "chai": "4.2.0",
     "commitizen": "4.2.2",
     "cz-conventional-changelog": "3.3.0",
     "mocha": "8.2.1",
+    "rimraf": "3.0.2",
     "semantic-release": "^17.3.1"
-    },
-    "cZConfig":{
-      "path":"node_modules/cz-conventional-changelog"
-    }
+  },
+  "cZConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
 }
