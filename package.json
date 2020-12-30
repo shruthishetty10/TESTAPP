@@ -1,14 +1,16 @@
 {
   "name": "testlibshruthi",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "description": "simple hello to test own librabry",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit":"git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShruthiShetty6/TESTAPP.git"
+    "url": "https://github.com/ShruthiShetty6/TESTAPP.git"
   },
   "keywords": [
     "simple",
@@ -22,5 +24,15 @@
   "homepage": "https://github.com/ShruthiShetty6/TESTAPP#readme",
   "dependencies": {
     "unique-random-array": "2.0.0"
-  }
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "commitizen": "4.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "mocha": "8.2.1",
+    "semantic-release": "^17.3.1"
+    },
+    "cZConfig":{
+      "path":"node_modules/cz-conventional-changelog"
+    }
 }
